@@ -1,65 +1,43 @@
-<p align="center">
-<br>
-<img src="assets/header.png" width="200" style="max-width: 100%;" />
-<br><br><br>
-</p>
 
-Easily share files to multiple devices on the LAN/Public Network.
+# forked from imyuanx/sharing-GUI
+我根据自己的需求，做了个性化开发，增减部分功能。
 
 # Sharing GUI
 
-English | [简体中文](./README-CN.md)
 
-The Sharing GUI is a client that is used to share files across multiple devices (iOS, Android, macOS, Windows, Linux...)
+Sharing GUI 是一个客户端，用于跨多个设备（iOS、Android、macOS、Windows、Linux…）共享文件
 
-**Only one client is required**, other devices use WEB. (client support macOS, Windows, Linux)
+**只需要一个客户端**, 其他设备使用 WEB。（客户端支持 macOS，即将支持 Windows、Linux）
 
-Start with [parvardegr/sharing](https://github.com/parvardegr/sharing) and then used [imyuanx/sharing](https://github.com/imyuanx/sharing)
+## 下载
 
-## Installation
+可以从[GitHub Releases](https://github.com/LIAO153/sharing-GUI/releases)下载安装，当然你也可以克隆代码自己打包（见下文）
 
-Download from [GitHub Releases](https://github.com/imyuanx/sharing-GUI/releases) and install it.
+## 特性
 
-## Features
+- 在其他设备上下载你的文件
+- 接收其他设备上的文件
+- 在其他设备上访问剪贴板
+- 支持局域网、公网
+- 支持身份认证
+- 支持 [ngrok](https://ngrok.com/)，快速分享到公网
 
-- Download your files on other devices
-- Accept files on other devices
-- Access your clipboard on other devices
-- Support LAN/Public Network
-- Support identity authentication
-- Support [ngrok](https://ngrok.com/), quickly share to the public network
+## 提示
 
-## Tips
+- 支持同时共享多个目录还支持文件夹和文件的组合。
+- 可以拖放目录或文件到软件。
 
-- Support share multiple directories also supports the combination of folders and files.
-- Drag and drop directories or files to window.
+## 预览
 
-## Preview
-
-![Preview](assets/app.png)
-
-## Development
-
-### Install Dependencies
-
+![预览1](assets/app.png)
+![预览2](assets/img.png)
+## 开发
+### 安装项目的所有依赖
 ```bash
-yarn
+    yarn install
 ```
-
-### Dev Mode
-
+### 运行
 ```bash
-yarn dev
+      yarn + "scripts"  # 比如：yarn dev
 ```
-
-### Distribution
-
-```bash
-yarn make
-```
-
-### Custom Core
-
-if your need custom core, visit this repo [imyuanx/sharing](https://github.com/imyuanx/sharing)
-
-I use [pkg](https://github.com/vercel/pkg) package it into binary files
+![img.png](assets/yarn_command.png)
