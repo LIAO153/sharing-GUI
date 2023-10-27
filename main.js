@@ -41,11 +41,16 @@ const createWindow = () => {
 
   // TODO: when we are development mode we can get process but when used the electron forge we can't get process, so when can't get process default used production. This is a hack if we can get process then fix it.
   // development mode use load url, production mode use load file
-  if (process.env.NODE_ENV == "development") {
+  //似乎有问题🤔
+  /*if (process.env.NODE_ENV === "development") {
     return win.loadURL(APP_URL + "/index");
   } else {
     return win.loadFile("./vite-build/index.html");
-  }
+  }*/
+
+    return win.loadFile("./vite-build/index.html");
+
+
 };
 
 app.whenReady().then(() => {

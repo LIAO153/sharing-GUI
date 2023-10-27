@@ -15,7 +15,7 @@ function Header() {
     };
 
     const onGitHubClickHandle = () => {
-        openDefaultBrowser("https://github.com/imyuanx/sharing-GUI");
+        openDefaultBrowser("https://github.com/");
     };
 
     const onTranslateClickHandle = (e) => {
