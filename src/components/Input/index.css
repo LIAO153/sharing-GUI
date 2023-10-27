@@ -1,0 +1,23 @@
+.input-box {
+  border: 1px solid #16A34A;
+  width: auto;
+  height: auto;
+  border-radius: 3px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+
+input {
+  border: 0px;
+  height: 26px;
+  width: 100px;
+  padding: 6px 8px;
+  box-sizing: border-box;
+  outline: none;
+}
+
+.input-icon {
+  padding-right: 0px;
+  width: 100% !important;
+}
